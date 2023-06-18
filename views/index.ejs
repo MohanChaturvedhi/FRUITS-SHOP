@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits-Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script> 
+</head>
+<style>
+
+#main-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 30px;
+  margin: 140px;
+  column-gap: 30px;
+  padding: 10px;
+}
+
+#mainbox{
+    background-color: rgb(196, 232, 220);
+    padding-left: 50px;
+    padding-top: 30px;
+    border-style: dotted;
+    border-color: solid black;
+}
+#aboutfruits{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 2px;
+}
+
+</style>
+<body>
+    <section id="logo-container">
+       <img src="images/download.png" alt="" style="width: 100px;height: 90px; margin-left: 20px;">
+       <h3>FRUITS-SHOP</h3>
+         <div id="cart-container">
+           <ul>
+              <li><a href="pages/cart"> Add To Cart </a></li>
+               <!-- <li><a href="pages/login">Login</a></li>
+               <li><a href="pages/signup">signup</a></li> -->
+           </ul>
+         </div>
+        </section>
+
+    <div id="head-container">
+      <ul>
+        <li><a href="/index">Home</a></li>
+        <li><a href="pages/items">All items</a></li>
+        <li><a href="pages/about">About</a></li>
+        <li><a href="pages/orders">Orders</a></li>
+        
+      </ul>
+    </div>
+
+    <!-- <div id="main-container">
+      <div id="mainbox">
+         <div id="mainimages">
+             <img src="images/apples.jpg" alt="" style="width: 200px;">
+         </div>
+         <div id="aboutfruits">
+             <h3>Apples</h3>
+             <h3>150 per kg</h3>
+         </div>
+         <div id="addfruits" style="padding-bottom: 15px;">
+              <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+        </div>
+       </div>
+
+       <!-- <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>150 per kg</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <!-- <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/guava.jpeg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>150 per Kg</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div> -->
+
+      <!-- <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <div id="mainbox"> -->
+        <!-- <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div>
+
+      <div id="mainbox">
+        <div id="mainimages">
+            <img src="images/apples.jpg" alt="" style="width: 200px;">
+        </div>
+        <div id="aboutfruits">
+            <h3>Apples</h3>
+            <h3>Price</h3>
+        </div>
+        <div id="addfruits" style="padding-bottom: 15px;">
+             <button style="background-color: crimson; width: 100px; height: 45px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: white;">Add to Cart</button>
+       </div>
+      </div> -->
+<!-- </div> -->
+
+     <script src="addtocart.js"></script>
+</body>
+</html>

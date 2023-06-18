@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+</head>
+<style>
+#login-form{
+    width: 400px;
+    background-color: rgb(133, 124, 185);
+    border-width: 3px;
+    margin-left: 60vh;
+    margin-top: 30vh;
+    height: 330px;
+    border-radius: 30px;
+    
+}
+#login-form input,h3{
+    display: block;
+    margin-left: 60px;
+    margin-top: 24px;
+    height: 30px;
+    width: 250px;
+    border-radius: 12px;
+    padding-left: 8px;
+    border-width: none;
+
+}
+
+</style>
+<body>
+   <form action="/login" id="login-form" method="POST">
+    <h3 style="padding-top: 20px; padding-left: 60px;">LoginForm</h3>
+    <input type="text" name="username" placeholder="Username">
+    <input type="text" name="email"  placeholder="email">
+    <input type="password" name="password" placeholder="password">
+    <input type="submit" style="width:100px; margin-left: 130px; background-color: rgb(237, 79, 48);">
+   </form> 
+</body>
+</html>

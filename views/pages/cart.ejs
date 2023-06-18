@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<style>
+    .container{
+        display: flex;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    #root{
+        width:60%;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sidebar{
+        width:40%;
+        border-radius:5px;
+        background-color: #eee;
+        margin-left:20px;
+        padding:15px;
+        text-align:center;
+    }
+    .head{
+        background-color: gold;
+        border-radius: 3px;
+        height: 40px;
+        padding: 10px;
+        margin-bottom: 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    #foot{
+        display:flex;
+        justify-content: space-between;
+        margin: 20px 0px;
+        padding: 10px 0px;
+        border-top: 1px solid #333; 
+    }
+
+</style>
+<body>
+    <div class="conatiner">
+        <div id="root"> </div>
+         <div class="sidebar">
+            <div class="head">My Cart</div>
+            <div id="cartItem">Your cart is empty</div>
+            <div id="foot">
+                <h3>Total</h3>
+                <h2 id="total">$0.00</h2>
+            </div>
+         </div>
+
+    </div>
+
+
+    <script src=""></script>
+</body>
+</html>
