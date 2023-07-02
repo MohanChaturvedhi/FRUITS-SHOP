@@ -4,12 +4,13 @@ const app=express();
 const path=require('path');
 const User=require('./models/login');
 const fruitsRouter=require('./routes/fruits');
+require('dotenv').config();
 
 app.use(express.json());
 app.set('view engine','ejs');
 //  app.set("views",path.join(__dirname,"./"))
 
-
+const port=process.env.PORT||3001;
 app.use(express.static('public'));
  app.use(express.urlencoded({extended:false}))
 
@@ -38,6 +39,6 @@ app.get("/", (req,res)=>{
 })
 app.use('/pages',fruitsRouter);
 
-app.listen(3000,()=>{
-    console.log("listening to server 3000");
+app.listen(port,()=>{
+    console.log(`listening to server ${port}`);
 })
